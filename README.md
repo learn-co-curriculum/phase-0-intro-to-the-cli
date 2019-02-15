@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-* Demongrate how to navigate with Bash
+* Demonsrate how to navigate with Bash
 * Demonstrate manipulating files in the command line
 
 ## Introduction
@@ -18,7 +18,7 @@ Operating System (like OS X or Windows).
 When you open a terminal, you're basically within your file system, or in a directory, just
 like you are when you open a Finder window or an Explorer window.
 
-## Demongrate How to Navigate With Bash
+## Demonsrate How to Navigate With Bash
 
 ### Identifying the "Present Working Directory" With `pwd`
 
