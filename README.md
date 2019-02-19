@@ -2,46 +2,122 @@
 
 ## Learning Goals
 
-* Demonsrate how to navigate with Bash
+* Demonstrate how to navigate with Bash
+* Identify differences between command-line interface, terminal emulator, and shell
 * Demonstrate manipulating files in the command line
 
 ## Introduction
 
-Bash is a text-based interpreter for controlling your computer (or operating system).
-Bash is actually an acronym which stands for **B**ourne-**A**gain **SH**ell. It replaced
-the Bourne shell and "bashed together" the unix programs sh, csh and ksh. From it you can
-navigate the files on your computer and execute programs.
+Have you ever noticed in movies or TV shows that when the "awesome computer
+hacker person" is going to do something _really important_ you see them typing
+a whole bunch of text on the screen and _viol&agrave;_ something happens?
 
-You can also connect to other computers and basically do everything you can do in your GUI
-Operating System (like OS X or Windows).
+Like this...
 
-When you open a terminal, you're basically within your file system, or in a directory, just
-like you are when you open a Finder window or an Explorer window.
+< insert gif from Mr. Robot >
 
-## Demonsrate How to Navigate With Bash
+or this....
+
+< insert gif from something else..>
+
+You might have wondered what's going on there. These computer heroes are using
+a way of working with the computer called the "command-line interface" or
+"CLI." The CLI asks the user for a command; the user types it in; and then the
+computer runs the "sentence" that was typed in and returns output.
+
+For example, you can ask, through the CLI, which files are located on the
+`Desktop`. You can create a new folder or delete it. But on top of
+file-management kinds of activities, you can also find out how busy your CPU
+is, how full your hard drive is, and whether your computer can find a network
+path to `flatironschool.com`. On top of this you don't have to click through
+several menus to get there (see examples below!).
+
+Experienced developers would say "the CLI gives you more control" or that it's
+"more powerful."
+
+Developers love the command line and, as a result, write most developer tools
+for other users of the command line. As a result, tool's you will need to be a
+developer will require you to use them through the command-line interface.
+
+Lots of people worry that using the CLI will get them in trouble - like they'll
+break their computer. We'd encourage you to think about the CLI like a good
+sharp kitchen knife: if you pay attention when you use it, you're going to have
+a valuable ally on your side. Take your time and if you have a question, ask.
+
+#===============================================================================
+
+## Identify differences between command-line interface, terminal emulator, and shell
+
+When you want to use the CLI you launch a program called a "terminal" program.
+That's short for "terminal emulator." A long time ago, people had keyboards and
+monitors that were tied to a computer that they all shared. This monitor +
+keyboard device was called a "terminal." It looked like this:
+
+< pic of terminal >
+
+< graphic of terminal cabled to a shared computer >
+
+Nowadays, the "terminal" is "emulated" in software. It's "virtual." You launch
+the "emulator" by opening a program called `Terminal` on OSX or something
+similar on Linux or Windows. Instead of being connected to a remote computer by
+a cable, your "terminal emulator" talks to the computer you're actually typing
+on.
+
+< graphic of terminal cabled to itself >
+
+When you launch the "terminal emulator" program, it will immediately start a
+program called a _shell_ program. The _shell_ program is what actually prompts
+you for input and returns the output. The shell most computers default to
+using is known as `bash`.
+
+To help keep these terms straight, here's a table
+
+< insert table derived from style guide >
+
+## Demonstrate How to Navigate With `bash`
+
+To sum up: `bash` is a text-based interpreter that provides a _command-line
+interface_ for controlling your computer (or operating system).
+
+> **ASIDE**: Bash is actually an acronym which stands for **B**ourne-**A**gain
+> **SH**ell. As the word "again" suggests, there are _other_ shells, some of
+> which came before `bash`. There are also shells that have come along _since_
+> `bash`. Nevertheless most programmers use `bash` or something very similar.
+
+### Identify My Logged-In Username
+
+Let's start simply. Let's ask the computer who it thinks I am:
+
+`whoami`
+
+< more....> < probably need screen shot>
 
 ### Identifying the "Present Working Directory" With `pwd`
 
-Open up command prompt or terminal. Type in: `pwd` and hit return.
+Open up your terminal program. Type in: `pwd` and hit return.
 
 ```bash
 $ pwd
 ```
 
 You should see some output describing the directory you are currently within.
+The `pwd` command stands for "**p**rint **w**orking **d**irectory".
+You'll see that the operating system created a directory under the "User" directory that was named the same as your `whoami` result
 
 `/Users/[your user name]]`
 
-That output is describing a location on your computer. You have a file system and within that
-file system are directories and files.
+We would call this directory your "home" directory.
 
-The `pwd` command stands for "**p**rint **w**orking **d**irectory".
+That output is describing a location on your computer.
 
 `/User/kellyegreene` means that I am currently working within a directory `/Users` on the root
-of my machine, and then within that directory, a directory named `kellyegreene`.
+of my machine, and then within that directory, a directory named `kellyegreene`. You might wonder what directory `Users` is in. Read on to learn more about the `root` directory which contains all directories....<something like that>
 
-That's my home directory. It belongs to the user I am currently logged in as. The placeholder for
-a user's home directory is the `~` ("tilde") symbol.
+That's my home directory.
+
+Because it's so common to read file from, or move things into our home
+directories, `bash` lets us type `~` as a shortcut. We'll be working with this
+shortcut in just a second.
 
 Try this:
 
@@ -57,6 +133,9 @@ You should now see that you are one directory above where you were, in you're in
 you might see:
 
 `/Users`
+
+You should be able to make a guess about what `cd` does, but we'll explain it
+right now!
 
 ### Change Directories Using `cd`
 
