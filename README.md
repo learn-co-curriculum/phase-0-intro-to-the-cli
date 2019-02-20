@@ -44,7 +44,7 @@ break their computer. We'd encourage you to think about the CLI like a good
 sharp kitchen knife: if you pay attention when you use it, you're going to have
 a valuable ally on your side. Take your time and if you have a question, ask.
 
-## Identify Differences Between Command-Line Interface, Terminal Wmulator, and Shell
+## Identify Differences Between Command-Line Interface, Terminal Emulator, and Shell
 
 When you want to use the CLI, you launch a program called a "terminal" program.
 That's short for "terminal emulator." A long time ago, people only had keyboards
