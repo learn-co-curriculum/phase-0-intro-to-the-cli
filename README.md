@@ -19,7 +19,6 @@ Like this...
 
 or this...
 
-![hacking 2](https://curriculum-content.s3.amazonaws.com/prework/hacker.gif)
 ![hacking 3](https://curriculum-content.s3.amazonaws.com/prework/hacking.gif)
 
 You might have wondered what's going on there. These computer "heroes" are often
@@ -88,11 +87,6 @@ When you want to use the CLI, you launch a "terminal" program. That's short for
 "terminal emulator." A long time ago, people only had keyboards and monitors (no
 mouse or graphic interface!) that were tied to a computer that they all shared.
 This monitor + keyboard device was called a "terminal." It looked like this:
-
-![Old school
-terminal](https://curriculum-content.s3.amazonaws.com/prework/tty1.jpg "Old
-School Temrinal")
-
 
 ![Another old school
 terminal](https://curriculum-content.s3.amazonaws.com/prework/tty2.jpg "Another
