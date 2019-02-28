@@ -1,4 +1,4 @@
-# CLI Essentials: Introduction
+# Introduction to the Command Line Interface
 
 ## Learning Goals
 
