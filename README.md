@@ -2,152 +2,25 @@
 
 ## Learning Goals
 
-* Demonstrate how to navigate with Bash
-* Demonstrate manipulating files in the command line
+* Demonstrate manipulating files in the command line <JM: expand into LGs>
 
 ## Introduction
 
-## Demonstrate How to Navigate With `bash`
+In the previous lesson we learned how to "navigate" the directory structure
+of our file system. But our file systems (and lives) would be so boring
+without _files_. Copying files, moving files, reading the contents of
+files, feeding files to the `ruby` program, cat .gifs. We looooooove files.
 
-To sum up: `bash` is a text-based interpreter that provides a _command-line
-interface_ for controlling your computer (or operating system).
-
-> **ASIDE**: Bash is actually an acronym which stands for **B**ourne-**A**gain
-> **SH**ell. As the word "again" suggests, there are _other_ shells, some of
-> which came before `bash`. There are also shells that have come along _since_
-> `bash`. Nevertheless most programmers use `bash` or something very similar.
-
-### Identify My Logged-In Username
-
-Let's start simply. Let's ask the computer who I am logged in as:
-
-```bash
-$ whoami
-```
-
- < probably need screen shot>
-
-The `whoami` command lets you see which user account you're logged in to from a
-terminal window. This might seem obvious, especially if you're logged in on your
-personal computer, but it's not always clear which account you're you're working
-in the command line.
-
-In a strange circumstance where `whoami` isn't installed, there is another command
-you can use that can tell you your current username. Try:
-
-```bash
-$ id -un
-```
-
-### Identifying the "Present Working Directory" With `pwd`
-
-With your Terminal program open, type in `pwd` and hit return/enter.
-
-```bash
-$ pwd
-```
-
-You should see some output describing the directory you are currently within.
-The `pwd` command stands for "**p**rint **w**orking **d**irectory".
-You'll see that the operating system created a directory under the "User"
-directory that was named the same as your `whoami` result
-
-`/Users/[your user name]`
-
-We would call this directory your "home" directory.
-
-That output is describing a location on your computer.
-
-`/User/kellyegreene` means that I am currently working within a directory `/Users`
-on the root of my machine, and then within that directory, a directory named
-`kellyegreene`. You might wonder what directory `Users` is in. Read on to
-learn more about the `root` directory which contains all directories....
-
-<something like that>
-
-That's my home directory.
-
-Because it's so common to read files from, or move things into our home
-directories, `bash` lets us type `~` as a shortcut. We'll be working with this
-shortcut later on.
-
-Try this:
-
-**Note:** *Any time you see the* `$` *character, you shouldn't type it in.
-This is just a standard way to represent a bash prompt. Yours may or may not
-be a* `$`.
-
-```bash
-$ cd ..
-$ pwd
-```
-
-You should now see that you are one directory above where you were, in you're
-in a new terminal, you might see:
-
-`/Users`
-
-You should be able to make a guess about what `cd` does, but we'll explain it
-right now!
-
-### Change Directories Using `cd`
-
-The `cd` command stands for "**c**hange **d**irectory".
-The `..` is a placeholder meaning the directory above the working directory.
-
-Try this:
-
-```bash
-$ cd .
-$ pwd
-```
-
-You can see you are still in the same directory.
-
-The `.` is a placeholder meaning the current directory.
-
-So here are three default placeholders for your file system:
-
-- `~` Your **home** directory
-- `.` The **current** directory
-- `..` The directory in which your current directory is contained—referred to
-as the "**parent**" directory.
-
-You can supply any path to the `cd` command to nkellyegreenegate to that location.
+This lesson will show you how to work with your files. In time, you might
+stop using Finder and other tools because it's so much faster (and fun!)
+to use the CLI.
 
 ## Demonstrate Manipulating Files in the Command Line
 
-### Paths in Shell
-
-The path supplied to the `cd` command, for example `/Users/kellyegreene`, is
-known as an absolute path.
-
-Systems can use either *absolute* or *relative* paths.
-
-An absolute path is a path that points to the same location on the file system
-regardless of the working directory. They start with `/` ("forward slash") because
-that is the root of your file system.
-
-This is an absolute path: `/Users/kellyegreene`.
-
-A relative path is a path **relative** to the working directory of the user or
-application, so the full absolute path will not have to be given. They start with
-the name of a directory or a file.
-
-This is a relative path: `kellyegreene/Documents`.
-
-Paths use `/` to denote levels.
-
-How many levels are within the following path?
-
-`/Users/kellyegreene/Development/code/flatiron-school/mixtape-app`
-
-If you said 6 levels to the question above you are right! Knowing where you
-are in your terminal is very important.
 
 ### Use `ls` to List Files in Shell
 
-In a new terminal, try this:
+In a new terminal, which automatically puts you in your _home directory_, try this:
 
 ```bash
 $ ls
@@ -228,6 +101,27 @@ We can also rename file or directory using the `mv` command. To rename a file wi
 $ mv original_program.rb renamed_program.rb
 ```
 
+### Use `cp` to Copy files
+
+If you think about it, move is really "copy, but delete the original."
+Well, `cp` does that, but doesn't delete the original. It's therefore a "copy."
+
+It uses the same snytax as `mv`:
+
+```bash
+cp letter_to_mom.txt letter_to_mom-2019-02-15.txt
+```
+
+If you want to copy a directory and its file contents, you need to use the `-r` 
+flag.
+
+```bash
+cp -r february_cat_gifs ~/Desktop/vital_media_files
+```
+
+> **NOTE**: Look how we're using the `~` shortcut! This expands into
+> `/Users/username/Desktop/vital_media_files`
+
 ### Create Empty Files With `touch`
 
 We can use the `touch` command to create empty files in the current directory. Try:
@@ -264,6 +158,12 @@ To delete a file, we can enter `rm` at a shell prompt.
 $ rm hello_world.rb
 ```
 
+Much like `cp`, if you want to delete a directory, you need to provide the `-r` flag
+
+```bash
+$ rm -r ~/Desktop/pokemon_fan_fiction
+```
+
 There additional options to `rm`:
 
 * -i (interactive) — Prompts you to confirm the deletion. This option can stop you from
@@ -271,18 +171,10 @@ deleting a file by mistake.
 * -f (force) — Overrides interactive mode and removes the file(s) without prompting.
 Use this with caution. This action cannot be undone!
 * -v (verbose) — Shows the progress of the files as they are being removed.
-* -r (recursive) — Deletes a directory and all files and subdirectories it contains.
-
-You can also delete directories using `rm` or `rmdir`.
 
 ## Conclusion
 
-As we keep exploring and working with the command line, we will start to unlock and
-understand its full potential! Adopting the terminal for command-related interactions
-can allow us to become more productive users-—we work on multiple projects, tasks, and
-easily switch contexts and folders. It's also the root of all computing systems. While
-syntax might vary between operating systems, the functions that we are given through
-terminal applications are the same.
+<JM: TBD> 
 
 ## Resources
 
