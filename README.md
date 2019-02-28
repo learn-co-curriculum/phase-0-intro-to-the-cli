@@ -1,8 +1,13 @@
-# CLI Essentials: Basic Commands in Bash
+# Basic Commands in Bash
 
 ## Learning Goals
 
-* Demonstrate manipulating files in the command line <JM: expand into LGs>
+* List directory files in the shell with `ls`
+* Move or rename files and directories with `mv`
+* Copy Files with `cp`
+* Create empty files with `touch`
+* Make new directories with `mkdir`
+* Remove files with `rm`
 
 ## Introduction
 
@@ -15,10 +20,7 @@ This lesson will show you how to work with your files. In time, you might
 stop using Finder and other tools because it's so much faster (and fun!)
 to use the CLI.
 
-## Demonstrate Manipulating Files in the Command Line
-
-
-### Use `ls` to List Files in Shell
+## List Directory Files in the Shell with `ls`
 
 In a new terminal, which automatically puts you in your _home directory_, try this:
 
@@ -26,11 +28,11 @@ In a new terminal, which automatically puts you in your _home directory_, try th
 $ ls
 ```
 
-You should see a list of all the files within your working directory.
+The command `ls` stands for "**l**i**s**t". After you run it, you should then see a list of all the files within your working directory.
 
-The command `ls` stands for "**l**i**s**t".
+### Using Flags with Commands
 
-We can use flags on most unix commands to give more specific instructions. Most
+We can use flags on most Unix commands to give more specific instructions. Most
 programs also accept flags, or options for execution.
 
 A flag is denotated by a `-` ("dash"). **Note:** *In some programs, options are
@@ -84,7 +86,7 @@ If you want to see the hidden files you can add the `a` flag to `ls` by typing `
 such as* `--force` *is defined with more than one character and must be entered with
 its own flag.*
 
-### Use `mv` to Move or Rename Files and Directories
+## Move or Rename Files and Directories with `mv`
 
 Move, or `mv` is a command that moves one or more files or directories from one place
 to another.  To move a file from the current directory to another location, enter a
@@ -101,7 +103,7 @@ We can also rename file or directory using the `mv` command. To rename a file wi
 $ mv original_program.rb renamed_program.rb
 ```
 
-### Use `cp` to Copy files
+## Copy Files with `cp`
 
 If you think about it, move is really "copy, but delete the original."
 Well, `cp` does that, but doesn't delete the original. It's therefore a "copy."
@@ -122,7 +124,7 @@ cp -r february_cat_gifs ~/Desktop/vital_media_files
 > **NOTE**: Look how we're using the `~` shortcut! This expands into
 > `/Users/username/Desktop/vital_media_files`
 
-### Create Empty Files With `touch`
+## Create Empty Files with `touch`
 
 We can use the `touch` command to create empty files in the current directory. Try:
 
@@ -139,7 +141,7 @@ $ ls
 You should see the file you just created, `hello_world.rb`, in the working directory.
 Note that this is an empty file and has nothing inside of it, because you just created it.
 
-### Making New Directiries Using `mkdir`
+## Make New Directories with `mkdir`
 
 We can make directories with the `mkdir` command:
 
@@ -149,7 +151,7 @@ $ mkdir name_of_directory
 Now if you enter `ls` you should see the empty directory you just created in the working
 directory.
 
-### Removing Files With `rm`
+## Remove Files with `rm`
 
 To delete a file, we can enter `rm` at a shell prompt.
 **Note:** Deleting a file with rm is *permanent*. This action cannot be undone.
@@ -174,7 +176,7 @@ Use this with caution. This action cannot be undone!
 
 ## Conclusion
 
-<JM: TBD> 
+There are a variety of commands you can use to manipulate files via the command line. If this list seems overwhelming at first, remember that it takes all programmers a little time to practice their CLI workflows. Refer back to these resources as you need to, and it will get easier as you go along.
 
 ## Resources
 
