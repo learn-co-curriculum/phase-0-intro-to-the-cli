@@ -28,7 +28,7 @@ using a way of working with the computer called the "command-line interface" or
 Many computer users are familiar with performing actions and executing tasks
 with graphical interfaces (also known as the GUI - Graphical User Interface)
 like the ones provided by our operating systems (MacOSX, Windows, Linux, etc.)
-and therefor find the concept of the CLI "mystical". 
+and therefore find the concept of the CLI "mystical". 
 
 Lots of people worry that using the CLI will get them in trouble - like they'll
 break their computer. We'd encourage you to think about the CLI like a good
@@ -105,7 +105,7 @@ program called a _shell_ program. The _shell_ program is what actually prompts
 you for input and returns the output. The shell most computers default to using
 is known as `bash`.
 
-To help keep these terms straight, here's a table
+To help keep these terms straight, here's a guide:
 
 * When discussing the terminal, we mean the "terminal emulation" program, i.e.
   the thing that handles raw input and output and painting a screen. *NOTE:* it
