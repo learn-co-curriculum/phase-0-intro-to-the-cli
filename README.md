@@ -35,35 +35,43 @@ The command `ls` stands for "**l**i**s**t". After you run it, you should then se
 We can use flags on most Unix commands to give more specific instructions. Most
 programs also accept flags, or options for execution.
 
-A flag is denotated by a `-` ("dash"). **Note:** *In some programs, options are
-passed directly to the command and not via flags.*
+A flag is denotated by a `-` ("dash").
 
-A common flag that nearly all programs and commands accept is a standalone `h`,
-for "**h**elp".
+**Note:** *In some programs, options are passed directly to the command and not via flags.*
+
 
 ```bash
-$ ls -h
+$ ls -l
 ```
 
+This prints out a list of all the files with "long form" output: it will tell us
+details about which user account owns the file, what the permissions for users
+are on that file, and the file name. You don't need to know what all those
+extra bits of information mean now, but realize that flags can really enrich
+the output you get.
+
 Single-character options can typically be combined with each other. For example,
-in the `ls` command, `h` is a suffix on the `l` flag meaning "**h**uman readable
-formats." They can be combined with `a` meaning "**a**ll information including.
+in the `ls` command, `h` is an option on the `l` flag meaning "**h**uman readable
+formats." They can be combined with `a` meaning "**a**ll information including
+"hidden files" (files that start with a `.`, often used for internal operating
+system configuration &mdash; we'll expand on this in a moment).
+
 Try these three together:
 
-We can use the `ls -al` flag with ls so that we can see all of the files including
-hidden files in "long form".
 
 ```bash
 $ ls -lah
 ```
+
 And also:
 
 ```bash
 $ ls -l -a -h
 ```
-Both are valid input options.
 
-When you've entered `$ ls -lah` above, you should have a received a list of files
+Both are valid input options and mean the same thing, as far as `ls` is concerned.
+
+When you entered `$ ls -lah` above, you should have a received a list of files
 including some that you hadn't seen from entering just `$ ls` before:
 
 ```bash
@@ -93,7 +101,7 @@ to another.  To move a file from the current directory to another location, ente
 path as the third word on the command line.
 
 ```bash
-$ mv filename /dir1/
+$ mv filename /dir1
 ```
 
 We can also rename file or directory using the `mv` command. To rename a file with
@@ -103,10 +111,18 @@ We can also rename file or directory using the `mv` command. To rename a file wi
 $ mv original_program.rb renamed_program.rb
 ```
 
+We could combine these two as:
+
+```bash
+$ mv temp_download.gif ~/Desktop/cats_with_weapons/ninja_cat.gif
+```
+
+> **NOTE**: Look how we're using the `~` shortcut!
+
 ## Copy Files with `cp`
 
 If you think about it, move is really "copy, but delete the original."
-Well, `cp` does that, but doesn't delete the original. It's therefore a "copy."
+Well, `cp` does a `mv`, but doesn't delete the original. It's therefore a "copy."
 
 It uses the same snytax as `mv`:
 
