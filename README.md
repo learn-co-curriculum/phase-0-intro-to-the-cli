@@ -27,29 +27,37 @@ using a way of working with the computer called the "command-line interface" or
 
 Many computer users are familiar with performing actions and executing tasks
 with graphical interfaces (also known as the GUI - Graphical User Interface)
-like the ones provided by our operating systems (MacOSX, Windows, Linux, etc.)
-and therefore find the concept of the CLI "mystical". 
+like the ones provided by our operating systems (MacOSX's "Finder", Windows'
+"File Explorer", Linux's "Commander", etc.) and therefore find the CLI "mystical". 
 
 Lots of people worry that using the CLI will get them in trouble - like they'll
 break their computer. We'd encourage you to think about the CLI like a good
 sharp kitchen knife: if you pay attention when you use it, you're going to have
 a valuable ally on your side. Take your time and if you have a question, ask.
 
+> **WARNING**: It's true, it is easier to run dangerous commands through the
+> CLI than through a GUI. Programs that list files or create directories are
+> not likely to break anything. Commands that remove files or directories
+> _should_ be used with caution. Just like that kitchen knife, sometimes you
+> need something that cuts through steak like a hot knife through butter. But
+> you must make sure your fingers are well clear of the blade when you cut.
+
 ## Define "Command Line Interface"
 
-A CLI is a console or text based representation in which the user types the
-commands for viewing, handling, and manipulating files on your computer or to
-operate software or devices. With a GUI, there’s control over files and the
-operating system – but advanced tasks may still need to use the command line.
+A CLI is a text-based dialog with the computer in which we type the
+commands for
 
-The CLI asks the user for a command; the user types it in; and then the computer
-runs the "sentence" that was typed in and returns output or makes changes. There
-are many reasons why developers may prefer the command line for doing these
-tasks.
+* viewing, handling, and manipulating files on your computer
+* launching software
+* working with devices like printers or networks
+
+The CLI asks (or "prompts") the user for a command; the user types it in; and then the computer
+runs the "sentence" that was typed in and "runs" the task. It returns output, too. There
+are many reasons why developers may prefer the command line to graphical interfaces.
 
 ## Describe the Purpose of CLIs
 
-With a CLI, users have all the control over file system and operating system,
+With a CLI, users have wide control over file system and operating system,
 and the tasks become simple. 
 
 For example, you can ask, through the CLI, which files are located on the
@@ -61,15 +69,14 @@ menus to get there!
 
 Experienced developers would say "the CLI gives you more control" or that it's
 "more powerful." With a GUI you use the mouse and the keyboard to control the
-file system or the operating system, which going to be slower than using the
+file system or the operating system, which is going to be slower than using the
 command line once you become familiar with the commands. In a CLI, the users
 only need to utilize the keyboard and may need to execute only few commands to
 complete the task.
 
 While some tasks may seem "easier" to do with a GUI, if you had a task such as
-renaming 100+ files in a folder, which is a very time intensive task, renaming
-100+ files in a directory can be done in less than a minute with a single
-command in the command line!
+renaming 100+ files in a folder according to a formula based on their file size,
+doing the same with the CLI on your side can be done in seconds.
 
 Other advantages include:
 * Working with computers remotely
@@ -78,8 +85,8 @@ Other advantages include:
 * Learning even more about computers
 
 Developers love the command line and, as a result, write most developer tools
-for other users of the command line. As a result, tools you will need to be a
-developer will require you to use them through the command-line interface.
+for other users of the command line. ***Tools you will need to be a
+developer will require you to use them through the command-line interface.***
 
 ## Identify Differences Between Command-Line Interface, Terminal Emulator, and Shell
 
@@ -111,15 +118,13 @@ To help keep these terms straight, here's a guide:
   the thing that handles raw input and output and painting a screen. *NOTE:* it
   does not process the input for semantic meaning. Interpretation of the
   commands themselves are handled by the `shell` not the terminal. You can
-  _type_ commands into the terminal, though.
+  _type_ commands into the terminal, though
 * The `shell` takes input, thinks, prints things out. This is used when talking
-  about the OS level mechanics. The `shell` doesn't paint the screen.
-* `Terminal` is a command used only by Mac users.
-* `consoles` exist in applications like Chrome and in an XTerm. It is not
-  interchangeable for terminal emulation or `shell`.
-* `bash` is a specific `shell` used by Unix systems (like MacOS and Linux).
-* The command-line is roughly the same as `shell`. It's a style of of
-  interaction with the `shell`.
+  about the OS level mechanics. The `shell` doesn't paint the screen
+* `Terminal` is the terminal emulation program on OSX
+* `bash` is a specific `shell` used by Unix systems (like Mac OSX and Linux).
+* The phrase "ommand-line" is roughly the same as `shell`. It's a style of of
+  interaction with the `shell`
 
 ## Conclusion
 
