@@ -23,17 +23,17 @@ or this...
 
 You might have wondered what's going on there. These computer "heroes" are often
 using a way of working with the computer called the "command-line interface" or
-"CLI." In the next coming lessons you're going to learn to use the CLI so that
-you can do awesome programmer grade stuff like....move files, create directories,
-and even...***run programs***.
+"CLI." In the next lessons you're going to learn to use the CLI so that
+you can do _awesome_ stuff like move files, create directories,
+and even ***run programs***.
 
-Wait, that doesn't sound like uploading a virus to the invading aliens' spaceship?
-You're right, the CLI is a pretty basic tool for doing basic daily work. It's only
-when cameras are rolling that it seems ***awesome***. The most important reason
-to get familiar with the CLI is this:
+We're sorry to tell you that you'll probably never use the CLI to upload a virus
+to the alien spaceship or to see "The Matrix." In reality, the CLI is a pretty
+basic tool for doing basic, daily work. The most important reason
+to become very familiar with the CLI is this:
 
- ***Tools you will need to be a
-developer will require you to use them through the command-line interface.***
+ ***Tools you will need to be a developer will require you to use them through
+ the command-line interface.***
 
 So let's start our journey toward mastering this way of working with our computers.
 
