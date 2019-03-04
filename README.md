@@ -25,7 +25,7 @@ You might have wondered what's going on there. These computer "heroes" are often
 using a way of working with the computer called the "command-line interface" or
 "CLI." In the next coming lessons you're going to learn to use the CLI so that
 you can do awesome programmer grade stuff like....move files, create directories,
-and even...***run programs**.
+and even...***run programs***.
 
 Wait, that doesn't sound like uploading a virus to the invading aliens' spaceship?
 You're right, the CLI is a pretty basic tool for doing basic daily work. It's only
