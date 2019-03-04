@@ -112,7 +112,7 @@ This monitor + keyboard device was called a "terminal."
 
 Terminals connected to a shared computer called a "mainframe."
 
-**TODO: Update with a graphic, not a gif of what T/S architectuer looks like **
+!["Mainframe Computers"](https://curriculum-content.s3.amazonaws.com/prework/cabled-terminals.jpg)
 
 Nowadays, the "terminal" is "emulated" in software. It's "virtual." You launch
 the "emulator" by opening a program called `Terminal` on OSX or something
@@ -120,7 +120,7 @@ similar on Linux or Windows. And instead of being connected to a remote computer
 a cable, your "terminal emulator" talks to the computer you're actually typing
 on.
 
-**TODO: Update with a graphic, not a gif of what T/S architectuer looks like **
+!["Terminal Emulator"](https://curriculum-content.s3.amazonaws.com/prework/emulator.jpg)
 
 When you launch the "terminal emulator" program, it will immediately start a
 program called a _shell_ program. The _shell_ program is what actually prompts
