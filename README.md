@@ -28,16 +28,20 @@ In a new terminal, which automatically puts you in your _home directory_, try th
 $ ls
 ```
 
-The command `ls` stands for "**l**i**s**t". After you run it, you should then see a list of all the files within your working directory.
+The command `ls` stands for "**l**i**s**t". After you run it, you should then see a list of all the files within your working directory. True to Unix style the command is easy to type and ***short*** (both keys on the home row of a keyboard, one letter on one hand the other on the other hand, it's about as fast as it can get; handy for a command we will run _all the time_).
+
+We can list the contents of another directory by providing an absolute or relative path
+
+```bash
+$ ls pathname
+```
 
 ### Using Flags with Commands
 
-We can use flags on most Unix commands to give more specific instructions. Most
-programs also accept flags, or options for execution.
+We can use flags on most Unix commands to give more specific instructions or to change the output.
+Most programs accept flags, or options for execution.
 
 A flag is denotated by a `-` ("dash").
-
-**Note:** *In some programs, options are passed directly to the command and not via flags.*
 
 
 ```bash
@@ -46,7 +50,31 @@ $ ls -l
 
 This prints out a list of all the files with "long form" output: it will tell us
 details about which user account owns the file, what the permissions for users
-are on that file, and the file name. You don't need to know what all those
+are on that file, and the file name.
+
+For example:
+
+```bash
+$ ls  /var/tmp
+SIMToolKit
+hi
+pfwtfp-dice-thrower-from-a-file
+sinatra-user-auth
+```
+
+becomes:
+
+
+```bash
+$ ls -l /var/tmp
+total 0
+drwxrwxrwx   3 byron.poodle  wheel   96 Jun  5  2018 SIMToolKit
+drwxr-xr-x   2 byron.poodle  wheel   64 Jun  5  2018 hi
+drwxr-xr-x  12 byron.poodle  wheel  384 Nov  9 15:35 pfwtfp-dice-thrower-from-a-file
+drwxr-xr-x  18 byron.poodle  wheel  576 May 21  2018 sinatra-user-auth
+```
+
+You don't need to know what all those
 extra bits of information mean now, but realize that flags can really enrich
 the output you get.
 
@@ -57,7 +85,6 @@ formats." They can be combined with `a` meaning "**a**ll information including
 system configuration &mdash; we'll expand on this in a moment).
 
 Try these three together:
-
 
 ```bash
 $ ls -lah
@@ -86,9 +113,10 @@ drwxr-xr-x  13 kellyegreene  staff   442B Jun  2 11:02 .git
 Notice that at the top of the file output there are a bunch of files that start with
 a `.`, like `.DS_Store`
 
-Files like `.DS_Store` are not listed. That's because files that start with a `.`
-are _hidden_ files. Your `.bash_profile` is a hidden file in your home directory.
-If you want to see the hidden files you can add the `a` flag to `ls` by typing `$ ls -a`.
+Files like `.DS_Store` are not listed. That's because files and directories that start with a `.`
+are _hidden_ files. Shells are often configured by putting information in these _hidden_ files.
+We'll not talk about these types of files in this lesson except to say that sometimes things
+are hidden until you add a flag.
 
 **Note:** *Combining flags is only valid for single-letter options. A "long option"
 such as* `--force` *is defined with more than one character and must be entered with
@@ -111,7 +139,7 @@ We can also rename file or directory using the `mv` command. To rename a file wi
 $ mv original_program.rb renamed_program.rb
 ```
 
-We could combine these two as:
+We could combine these two usages as:
 
 ```bash
 $ mv temp_download.gif ~/Desktop/cats_with_weapons/ninja_cat.gif
