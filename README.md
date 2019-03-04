@@ -40,18 +40,29 @@ So let's start our journey toward mastering this way of working with our compute
 ## Fighting Fear
 
 Many computer users are familiar with performing actions and executing tasks
-with graphical interfaces (also known as the GUI - Graphical User Interface)
-like the ones provided by our operating systems (MacOSX's "Finder", Windows'
-"File Explorer", Linux's "Commander", etc.) and therefore find the CLI "mystical." 
+with _graphical_ interfaces (also known as the GUI - Graphical User Interface)
+_instead of_ command-line interfaces. Since the early 90's CLIs, which ruled
+the world from about 1950 to 1990, started giving ground to the tools
+of GUI operating systems.
+
+Having seen nothing but things like 
+
+* MacOSX's "Finder"
+* Windows' "File Explorer"
+* or Linux's "Commander"
+
+people began to find the CLI "mysterious." But it's only mysterious because
+you've not had a chance to work with it. Once you you get a bit of practice, 
+you're going to love it..
 
 Lots of people worry that using the CLI will get them in trouble, that they'll
 break their computer. We encourage you to think about the CLI like a high-quality,
 sharp kitchen knife: if you pay attention when you use it, you're going to have
-a valuable ally on your side. Take your time and if you have a question, ask.
+a valuable ally on your side.
 
 > **WARNING**: It's true, it is easier to run dangerous commands through the
-> CLI than through a GUI. Programs that list files or create directories are
-> not likely to break anything. Commands that remove files or directories
+> CLI than through a GUI. Commands that list files or create directories are
+> not likely to break anything. Commands that remove files or directories, however,
 > _should_ be used with caution. Just like that kitchen knife, sometimes you
 > need something that cuts through steak like a hot knife through butter. But
 > you must make sure your fingers are well clear of the blade when you cut.
