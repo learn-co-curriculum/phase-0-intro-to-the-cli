@@ -39,7 +39,7 @@ $ ls pathname
 ### Using Flags with Commands
 
 We can use flags on most Unix commands to give more specific instructions or to change the output.
-Most programs accept flags, or options for execution.
+Most programs accept flags or options for execution.
 
 A flag is denotated by a `-` ("dash").
 
