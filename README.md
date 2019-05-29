@@ -41,7 +41,7 @@ $ ls pathname
 We can use flags on most Unix commands to give more specific instructions or to change the output.
 Most programs accept flags or options for execution.
 
-A flag is denotated by a `-` ("dash").
+A flag is denoted by a `-` ("dash").
 
 
 ```bash
@@ -152,7 +152,7 @@ $ mv temp_download.gif ~/Desktop/cats_with_weapons/ninja_cat.gif
 If you think about it, move is really "copy, but delete the original."
 Well, `cp` does a `mv`, but doesn't delete the original. It's therefore a "copy."
 
-It uses the same snytax as `mv`:
+It uses the same syntax as `mv`:
 
 ```bash
 cp letter_to_mom.txt letter_to_mom-2019-02-15.txt
