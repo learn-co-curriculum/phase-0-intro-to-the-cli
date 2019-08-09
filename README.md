@@ -126,7 +126,7 @@ This monitor + keyboard device was called a "terminal."
 
 Terminals connected to a shared computer called a "mainframe."
 
-!["Mainframe Computers"](https://curriculum-content.s3.amazonaws.com/prework/cabled-terminals.jpg)
+!["Mainframe Computers"](https://curriculum-content.s3.amazonaws.com/cli-essentials/bash-intro/Image_56_MainFrameDiagram.png)
 
 Nowadays, the "terminal" is "emulated" in software. It's "virtual." You launch
 the "emulator" by opening a program called `Terminal` on OSX or something
