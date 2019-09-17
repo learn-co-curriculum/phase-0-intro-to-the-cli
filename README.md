@@ -134,7 +134,7 @@ similar on Linux or Windows. And instead of being connected to a remote computer
 a cable, your "terminal emulator" talks to the computer you're actually typing
 on.
 
-!["Terminal Emulator"](https://curriculum-content.s3.amazonaws.com/prework/emulator.jpg)
+!["Terminal Emulator"](https://curriculum-content.s3.amazonaws.com/cli-essentials/bash-intro/Image_57_TerminalEmulator.png)
 
 When you launch the "terminal emulator" program, it will immediately start a
 program called a _shell_ program. The _shell_ program is what actually prompts
