@@ -45,7 +45,7 @@ _instead of_ command-line interfaces. Since the early 90's CLIs, which ruled
 the world from about 1950 to 1990, started giving ground to the tools
 of GUI operating systems.
 
-Having seen nothing but things like 
+Having seen nothing but things like
 
 * MacOSX's "Finder"
 * Windows' "File Explorer"
@@ -155,7 +155,8 @@ To help keep these terms straight, here's a guide:
   handles the input/output (as we said) while the shell works with the
   operating system and the CPU
 
-* `bash` is a specific `shell` used by Unix systems (like Mac OSX and Linux).
+* `bash` and `zsh` are a specific `shell`s used by Unix systems (like Mac OSX
+  and Linux).
 * The phrase "command-line" is roughly the same as `shell`. It's a style of
   interaction with the `shell`
 
@@ -176,5 +177,3 @@ successful programmer.
 - [Lifehacker on the Command Line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
 
 - [Command Line Interface (CLI) vs. Graphical User Interface (GUI)](https://www.cybrary.it/0p3n/command-line-interface-cli-vs-graphical-user-interface-gui/)
-
-
