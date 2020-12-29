@@ -117,8 +117,11 @@ Other advantages include:
 
 ## Identify Differences Between Command-Line Interface, Terminal Emulator, and Shell
 
-When you want to use the CLI, you launch a "terminal" program. That's short for
-"terminal emulator." A long time ago, people only had keyboards and monitors (no
+When you want to use the CLI, you launch a "terminal" program. For Mac users, the
+default program is called **Terminal**. For WSL users, the **Ubuntu** application will act
+as your "terminal." 
+
+"Terminal" is short for "terminal emulator." A long time ago, people only had keyboards and monitors (no
 mouse or graphic interface!) that were tied to a computer that they all shared.
 This monitor + keyboard device was called a "terminal."
 
@@ -129,8 +132,7 @@ Terminals connected to a shared computer called a "mainframe."
 !["Mainframe Computers"](https://curriculum-content.s3.amazonaws.com/cli-essentials/bash-intro/Image_56_MainFrameDiagram.png)
 
 Nowadays, the "terminal" is "emulated" in software. It's "virtual." You launch
-the "emulator" by opening a program called `Terminal` on OSX or something
-similar on Linux or Windows. And instead of being connected to a remote computer by
+the "emulator" by opening a program. And instead of being connected to a remote computer by
 a cable, your "terminal emulator" talks to the computer you're actually typing
 on.
 
@@ -157,6 +159,7 @@ To help keep these terms straight, here's a guide:
 
 * `bash` and `zsh` are a specific `shell`s used by Unix systems (like Mac OSX
   and Linux).
+  
 * The phrase "command-line" is roughly the same as `shell`. It's a style of
   interaction with the `shell`
 
