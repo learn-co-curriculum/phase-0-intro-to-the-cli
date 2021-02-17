@@ -98,7 +98,7 @@ file system or the operating system, which is going to be slower than using the
 command line (once you become familiar with the commands). In a CLI, users only
 use the keyboard and may need to execute only a few short commands to complete
 their equivalent GUI tasks. CLI users' fingers never leave the "home row"
-(assuming they can touch type) which this _adds_ to their speed.
+(assuming they can touch type) which _adds_ to their speed.
 
 While some tasks may seem "easier" to do with a GUI, development-like tasks are
 often much more easily completed in the CLI. If you had a task such as renaming
