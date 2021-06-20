@@ -11,7 +11,7 @@
 
 Have you ever noticed in movies or TV shows that when the "awesome computer
 hacker person" needs to do something _really important_, you see them typing a
-lot of text on a screen and _viol&agrave;_ something seemingly magical happens?
+lot of text on a screen and _voil&agrave;_ something seemingly magical happens?
 
 Like this...
 
