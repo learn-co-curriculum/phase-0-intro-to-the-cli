@@ -9,51 +9,21 @@
 
 ## Introduction
 
-Have you ever noticed in movies or TV shows that when the "awesome computer
-hacker person" needs to do something _really important_, you see them typing a
-lot of text on a screen and _voil&agrave;_ something seemingly magical happens?
+Most computer users these days are familiar with performing actions and executing
+tasks using a _Graphical User Interface_ (GUI). When you use things like
+MacOSX's "Finder" or Windows' "File Explorer", you're using a GUI.
 
-Like this...
+Prior to the early 1990's, however, the only way to interact with a computer was
+by using a _command-line interface_ (CLI). Accomplishing tasks in those days
+(e.g., creating, viewing or manipulating files; launching software) required
+the user to type commands into a _terminal_.
 
-![hacking 1](https://curriculum-content.s3.amazonaws.com/prework/hack.gif)
-
-or this...
-
-![hacking 3](https://curriculum-content.s3.amazonaws.com/prework/hacking.gif)
-
-You might have wondered what's going on there. These computer "heroes" are often
-using a way of working with the computer called the "command-line interface" or
-"CLI." In the next lessons, you're going to learn to use the CLI so that you can
-do _awesome_ stuff like move files, create directories, and even ***run
-programs***.
-
-We're sorry to tell you that you'll probably never use the CLI to upload a virus
-to the alien spaceship or to see "The Matrix." In reality, the CLI is a pretty
-basic tool for doing basic, daily work. The most important reason
-to become very familiar with the CLI is this:
-
- ***Tools you will need to be a developer will require you to use them through
- the command-line interface.***
-
-So let's start our journey toward mastering this way of working with our computers.
-
-## Fighting Fear
-
-Many computer users are familiar with performing actions and executing tasks
-with _graphical_ interfaces (also known as the GUI - Graphical User Interface)
-_instead of_ command-line interfaces. Since the early 90's CLIs, which ruled
-the world from about 1950 to 1990, started giving ground to the tools
-of GUI operating systems.
-
-Having seen nothing but things like
-
-* MacOSX's "Finder"
-* Windows' "File Explorer"
-* or Linux's "Commander"
-
-people began to find the CLI "mysterious." But it's only mysterious because
-you've not had a chance to work with it. Once you get a bit of practice, you're
-going to love it..
+Given how prevalent GUIs are at this point, the average computer user will
+probably rarely or never need to use a command line to accomplish their tasks.
+The same is not true for developers, however. Learning to use a CLI will allow
+you to accomplish many tasks more quickly and reliably than you can using a GUI.
+Furthermore, there are some tools you will need as a developer that can only be
+used through the command-line interface.
 
 Lots of people worry that using the CLI will get them in trouble, that they'll
 break their computer. We encourage you to think about the CLI like a high-quality,
@@ -63,34 +33,18 @@ a valuable ally on your side.
 > **WARNING**: It's true, it is easier to run dangerous commands through the CLI
 > than through a GUI. Commands that list files or create directories are not
 > likely to break anything. Commands that remove files or directories, however,
-> _should_ be used with caution. Just like that kitchen knife, sometimes you
-> need something that cuts through steak like a hot knife through butter. But
-> you must make sure your fingers are well clear of the blade when you cut.
+> _should_ be used with caution.
 
 ## Define "Command Line Interface"
 
-A CLI is a text-based conversation with the computer in which we type the
-commands for
-
-* viewing, handling, and manipulating files on your computer
-* launching software
-* working with devices like printers or networks
-
-The CLI asks (or "prompts") the user for a command, the user types it in, and
-then the computer runs the "sentence" that was typed in. It returns output, too
-(where appropriate).
-
-## Describe the Purpose of CLIs
-
-With a CLI, users have wide control over the file system and operating system,
-and the tasks become simple.
-
-For example, you can ask, through the CLI, which files are located on the
-`Desktop`. You can create a new folder or delete it. But on top of
-file-management kinds of activities, you can also find out how busy your CPU is,
-how full your hard drive is, and whether your computer can find a network path
-to `flatironschool.com`. On top of this, you don't have to click through several
-menus to get there!
+A CLI is simply a text-based conversation with the computer in which we type the
+commands for accomplishing tasks. With a CLI, users have wide control over the
+file system and operating system, and the tasks become simple. For example, you
+can ask, through the CLI, which files are located on the `Desktop`. You can
+create a new folder or delete it. But on top of file-management kinds of
+activities, you can also find out how busy your CPU is, how full your hard drive
+is, and whether your computer can find a network path to `flatironschool.com`.
+On top of this, you don't have to click through several menus to get there!
 
 Experienced developers would say "the CLI gives you more control" or that it's
 "more powerful." With a GUI you use the mouse and the keyboard to control the
@@ -108,68 +62,47 @@ side could be completed in seconds. And if you do that sort of thing often, you
 can save that process and run it again whenever you wish! This is called
 "scripting."
 
-Other advantages include:
-
-* Working with computers remotely
-* Managing files on a file server or web server (e.g., managing a web page)
-* Automating commonly performed tasks
-* Learning even more about computers
-
 ## Identify Differences Between Command-Line Interface, Terminal Emulator, and Shell
 
-When you want to use the CLI, you launch a "terminal" program. For Mac users, the
-default program is called **Terminal**. For WSL users, the **Ubuntu** application will act
-as your "terminal." 
-
-"Terminal" is short for "terminal emulator." A long time ago, people only had keyboards and monitors (no
-mouse or graphic interface!) that were tied to a computer that they all shared.
-This monitor + keyboard device was called a "terminal."
-
-![TTY](https://curriculum-content.s3.amazonaws.com/prework/tty3.jpg)
-
-Terminals connected to a shared computer called a "mainframe."
+In the early days of computers, users didn't work on standalone, "personal"
+computers. Instead, their workstation consisted of only a keyboard and monitor —
+no mouse and no graphical user interface. This monitor + keyboard device was
+called a "terminal," and multiple terminals were connected to a _shared_
+computer called a "mainframe."
 
 !["Mainframe Computers"](https://curriculum-content.s3.amazonaws.com/cli-essentials/bash-intro/Image_56_MainFrameDiagram.png)
 
-Nowadays, the "terminal" is "emulated" in software. It's "virtual." You launch
-the "emulator" by opening a program. And instead of being connected to a remote computer by
-a cable, your "terminal emulator" talks to the computer you're actually typing
-on.
-
-!["Terminal Emulator"](https://curriculum-content.s3.amazonaws.com/cli-essentials/bash-intro/Image_57_TerminalEmulator.png)
+Nowadays, the "terminal" is emulated in software. It's virtual. You launch the
+emulator by opening a program. And instead of being connected to a remote
+computer by a cable, your "terminal emulator" talks to the computer you're
+actually typing on. For Mac users, the default terminal emulator program is
+called **Terminal**. For WSL users, the **Ubuntu** application will act as your
+"terminal."
 
 When you launch the "terminal emulator" program, it will immediately start a
 program called a _shell_ program. The _shell_ program is what actually prompts
-you for input and returns the output. The shell most computers default to using
-is known as `bash`.
+you for input and returns the output. `bash` and `zsh` are specific `shell`s
+used by Unix systems (like Mac OSX and Linux).
 
-To help keep these terms straight, here's a guide:
+To summarize:
 
 * When discussing the terminal, we mean the "terminal emulation" program, i.e.
-  the thing that handles raw input and output. *NOTE:* Interpretation of the
-  commands themselves is handled by the `shell`, not the terminal. You can _type_
-  commands into the terminal, though
+  the thing that handles raw input and output.
 
-* The `shell` takes input, thinks, prints things out. It knows when a command
-  doesn't exist or make sense. It knows how to ask the CPU to do work. But it
-  **doesn't** listen for keyboard keys being pressed and it **doesn't tell your
-  terminal emulator how to display the results it calculated**. The terminal
-  handles the input/output (as we said) while the shell works with the
-  operating system and the CPU
+* The `shell` is what handles _interpreting_ the commands you type in to the
+  terminal. It takes input, thinks, prints things out. It knows when a command
+  doesn't exist or make sense, and it knows how to ask the CPU to do work.
 
-* `bash` and `zsh` are a specific `shell`s used by Unix systems (like Mac OSX
-  and Linux).
-  
 * The phrase "command-line" is roughly the same as `shell`. It's a style of
-  interaction with the `shell`
+  interaction with the `shell`.
 
 ## Conclusion
 
 Although using a command line interface might seem intimidating at first as it
-requires the memorization of dozens of different commands, it can be a valuable
-resource that makes using a computer easier. Using a command line, you can
-perform almost all of the same tasks that can be done with a GUI. However, many
-tasks can be performed quicker and can be much easier to automate.
+requires learning dozens of different commands, it can be a valuable resource
+that makes using a computer easier. Using a command line, you can perform almost
+all of the same tasks that can be done with a GUI. However, many tasks can be
+performed quicker and can be much easier to automate.
 
 Ultimately though, many programming languages and programming tools assume that
 you're comfortable with the CLI. You must have this comfort in order to be a
