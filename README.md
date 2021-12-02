@@ -117,13 +117,14 @@ Other advantages include:
 
 ## Identify Differences Between Command-Line Interface, Terminal Emulator, and Shell
 
-When you want to use the CLI, you launch a "terminal" program. For Mac users, the
-default program is called **Terminal**. For WSL users, the **Ubuntu** application will act
-as your "terminal." 
+When you want to use the CLI, you launch a "terminal" program. For Mac users,
+the default program is called **Terminal**. For WSL users, the **Ubuntu**
+application will act as your "terminal."
 
-"Terminal" is short for "terminal emulator." A long time ago, people only had keyboards and monitors (no
-mouse or graphic interface!) that were tied to a computer that they all shared.
-This monitor + keyboard device was called a "terminal."
+"Terminal" is short for "terminal emulator." A long time ago, people only had
+keyboards and monitors (no mouse or graphic interface!) that were tied to a
+computer that they all shared. This monitor + keyboard device was called a
+"terminal."
 
 ![TTY](https://curriculum-content.s3.amazonaws.com/prework/tty3.jpg)
 
@@ -132,9 +133,9 @@ Terminals connected to a shared computer called a "mainframe."
 !["Mainframe Computers"](https://curriculum-content.s3.amazonaws.com/cli-essentials/bash-intro/Image_56_MainFrameDiagram.png)
 
 Nowadays, the "terminal" is "emulated" in software. It's "virtual." You launch
-the "emulator" by opening a program. And instead of being connected to a remote computer by
-a cable, your "terminal emulator" talks to the computer you're actually typing
-on.
+the "emulator" by opening a program. And instead of being connected to a remote
+computer by a cable, your "terminal emulator" talks to the computer you're
+actually typing on.
 
 !["Terminal Emulator"](https://curriculum-content.s3.amazonaws.com/cli-essentials/bash-intro/Image_57_TerminalEmulator.png)
 
@@ -177,6 +178,6 @@ successful programmer.
 
 ## Resources
 
-- [Lifehacker on the Command Line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
+* [Lifehacker on the Command Line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
 
-- [Command Line Interface (CLI) vs. Graphical User Interface (GUI)](https://www.cybrary.it/0p3n/command-line-interface-cli-vs-graphical-user-interface-gui/)
+* [Command Line Interface (CLI) vs. Graphical User Interface (GUI)](https://www.cybrary.it/0p3n/command-line-interface-cli-vs-graphical-user-interface-gui/)
