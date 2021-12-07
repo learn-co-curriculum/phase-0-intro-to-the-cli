@@ -2,9 +2,9 @@
 
 ## Learning Goals
 
-* Define "Command Line Interface"
-* Describe the purpose of CLIs
-* Identify differences between command-line interface, terminal emulator, and
+- Define "Command Line Interface"
+- Describe the purpose of CLIs
+- Identify differences between command-line interface, terminal emulator, and
   shell
 
 ## Introduction
@@ -37,14 +37,15 @@ a valuable ally on your side.
 
 ## Define "Command Line Interface"
 
-A CLI is simply a text-based conversation with the computer in which we type the
-commands for accomplishing tasks. With a CLI, users have wide control over the
-file system and operating system, and the tasks become simple. For example, you
-can ask, through the CLI, which files are located on the `Desktop`. You can
-create a new folder or delete it. But on top of file-management kinds of
-activities, you can also find out how busy your CPU is, how full your hard drive
-is, and whether your computer can find a network path to `flatironschool.com`.
-On top of this, you don't have to click through several menus to get there!
+A CLI is a program that allows us to have a text-based conversation with the
+computer in which we type the commands for accomplishing tasks. With a CLI,
+users have wide control over the file system and operating system, and the tasks
+become simple. For example, you can ask, through the CLI, which files are
+located on the `Desktop`. You can create a new folder or delete it. But on top
+of file-management kinds of activities, you can also find out how busy your CPU
+is, how full your hard drive is, and whether your computer can find a network
+path to `flatironschool.com`. On top of this, you don't have to click through
+several menus to get there!
 
 Experienced developers would say "the CLI gives you more control" or that it's
 "more powerful." With a GUI you use the mouse and the keyboard to control the
@@ -86,14 +87,14 @@ used by Unix systems (like Mac OSX and Linux).
 
 To summarize:
 
-* When discussing the terminal, we mean the "terminal emulation" program, i.e.
+- When discussing the terminal, we mean the "terminal emulation" program, i.e.
   the thing that handles raw input and output.
 
-* The `shell` is what handles _interpreting_ the commands you type in to the
+- The `shell` is what handles _interpreting_ the commands you type in to the
   terminal. It takes input, thinks, prints things out. It knows when a command
   doesn't exist or make sense, and it knows how to ask the CPU to do work.
 
-* The phrase "command-line" is roughly the same as `shell`. It's a style of
+- The phrase "command-line" is roughly the same as `shell`. It's a style of
   interaction with the `shell`.
 
 ## Conclusion
